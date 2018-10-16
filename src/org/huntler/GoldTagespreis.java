@@ -13,16 +13,16 @@ public class GoldTagespreis {
     /**
      * should be the gold value
      */
-    public double wert;
+    public double preis;
 
     /**
      * The constructor is used to set the parameters once.
      * @param d is the date parameter
      * @param w is the value parameter
      */
-    public GoldTagespreis(String d, double w) {
+    public GoldTagespreis(String d, double p) {
         datum = d;
-        wert = w;
+        preis = p;
     }
 
     /**
@@ -30,6 +30,6 @@ public class GoldTagespreis {
      * @return returns the date and value in a readable format.
      */
     public String toString() {
-        return "{ " + datum + " - " + wert + " }";
+        return "{ " + datum + " - " + preis + " }";
     }
 }
